@@ -3,6 +3,18 @@
 // Register Custom Navigation Walker
 require_once( trailingslashit( get_template_directory() ). 'lib/menus/wp_bootstrap_navwalker.php' );
 
+function header_widgets_init() {
+  register_sidebar([
+    'name'          => __('Top Header', 'sage'),
+    'id'            => 'sidebar-header',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+}
+add_action('widgets_init', __NAMESPACE__ . '\\header_widgets_init');
+
 function register_my_menu() {
     register_nav_menu('navbar-top-menu',__( 'Navbar Top Menu' ));
     register_nav_menu('navbar-left-menu',__( 'Navbar Left Menu' ));
