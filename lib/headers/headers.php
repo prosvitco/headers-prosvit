@@ -16,7 +16,6 @@ function header_widgets_init() {
 add_action('widgets_init', __NAMESPACE__ . '\\header_widgets_init');
 
 function register_my_menu() {
-    register_nav_menu('navbar-top-menu',__( 'Navbar Top Menu' ));
     register_nav_menu('navbar-left-menu',__( 'Navbar Left Menu' ));
     register_nav_menu('navbar-right-menu',__( 'Navbar Right Menu' ));
 }

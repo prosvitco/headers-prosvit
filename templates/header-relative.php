@@ -1,4 +1,4 @@
-<header role="banner" class="header-section section-dark navbar-default">
+<header role="banner" class="header navbar-default">
     <div class="container">
         <div class="row">
             <div class="navbar-header">
@@ -28,8 +28,7 @@
                     wp_nav_menu(['theme_location' => 'navbar-right-menu', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav navbar-right menu-nav']);
                 endif; 
                 ?>
-
-                <div class="social-icons hidden-xs"></div>
+                
             </nav>
         </div>
     </div>
