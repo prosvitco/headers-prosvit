@@ -1,7 +1,7 @@
 <?php
 
 // Register Custom Navigation Walker
-require_once( trailingslashit( get_template_directory() ). 'lib/menus/wp_bootstrap_navwalker.php' );
+require_once( trailingslashit( get_template_directory() ). 'lib/headers/wp_bootstrap_navwalker.php' );
 
 function header_widgets_init() {
   register_sidebar([
