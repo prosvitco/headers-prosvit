@@ -31,8 +31,8 @@
             <nav id="navigation" class="navigation navbar-collapse collapse">
 
                 <?php 
-                if (has_nav_menu('primary_navigation')) :
-                    wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav navbar-left menu-nav']);
+                if (has_nav_menu('navbar-left-menu')) :
+                    wp_nav_menu(['theme_location' => 'navbar-left-menu', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav navbar-left menu-nav']);
                 endif; 
                 ?>
 
